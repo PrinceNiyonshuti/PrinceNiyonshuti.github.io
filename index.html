@@ -1613,5 +1613,43 @@
 		<script src="js/google-map.js "></script>
 
 		<script src="js/main.js "></script>
+
+		    <!-- Whatsapp Chat plugin -->
+    <script>
+        var url = 'https://wati-integration-service.clare.ai/ShopifyWidget/shopifyWidget.js?21726';
+        var s = document.createElement('script');
+        s.type = 'text/javascript';
+        s.async = true;
+        s.src = url;
+        var options = {
+          "enabled":true,
+          "chatButtonSetting":{
+              "backgroundColor":"#b1b493",
+              "ctaText":"",
+              "borderRadius":"25",
+              "marginLeft":"0",
+              "marginBottom":"50",`
+              "marginRight":"50",
+              "position":"right"
+          },
+          "brandSetting":{
+              "brandName":"Prince Niyonshuti",
+              "brandSubTitle":"Typically replies within a minute",
+              "brandImg":"images/about-1.jpg",
+              "welcomeText":"Hi there!\nHow can I help you?",
+              "messageText":"Hello, I have a project in mind",
+              "backgroundColor":"#b1b493",
+              "ctaText":"Start Chat",
+              "borderRadius":"25",
+              "autoShow":false,
+              "phoneNumber":"250780589950"
+          }
+        };
+        s.onload = function() {
+            CreateWhatsappChatWidget(options);
+        };
+        var x = document.getElementsByTagName('script')[0];
+        x.parentNode.insertBefore(s, x);
+    </script>
 	</body>
 </html>
